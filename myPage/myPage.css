@@ -1,0 +1,100 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  color: var(--gray1);
+}
+
+/* -------NAVBAR--------*/
+/*style the list of links */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*style the link containers */
+.list-item {
+  box-sizing: border-box;
+  background-color: var(--green);
+  text-decoration: none;
+  width: 150px;
+  height: 60px;
+  padding: 5px;
+  float: left;
+}
+
+/* style the link containers when hovered */
+.list-item:hover {
+  background-color: var(--orange);
+}
+
+/*style the individual links themselves */
+.nav-jump {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.7em;
+  padding: 15px;
+}
+
+/* style individual link when hovered */
+.nav-jump:hover {
+  display: block;
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.7em;
+  padding: 15px;
+}
+
+/* -------CONTENT--------*/
+
+/* style the container holding all content */
+.content {
+  /* flex-flow: column wrap;
+      flex-wrap: wrap;
+      align-items: center; */
+  display: grid;
+  height: 110vh;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "about"
+    "projects"
+    "work";
+}
+
+/*style each content section container*/
+.section {
+  height: 500px;
+  width: auto;
+  margin: 10px;
+  border: 10px solid var(--green);
+  padding-bottom: 10px;
+  border: 10px;
+  background-color: #0000;
+}
+
+/*style the about section*/
+#about {
+  grid-area: about;
+  height: 130px;
+  width: 330px;
+}
+
+/* style my image */
+.my-image {
+  width: 140px;
+  height: 330px;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#work {
+  grid-area: work;
+}

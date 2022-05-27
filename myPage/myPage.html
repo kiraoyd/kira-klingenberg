@@ -28,10 +28,13 @@
           <a class="nav-jump" href="#about"> Who again? </a>
         </li>
         <li class="list-item">
+          <a class="nav-jump" href="#experience">My Work</a>
+        </li>
+        <li class="list-item">
           <a class="nav-jump" href="#projects"> Projects</a>
         </li>
         <li class="list-item">
-          <a class="nav-jump" href="#work">My Work</a>
+          <a class="nav-jump" href="#contact"> Contact</a>
         </li>
       </ul>
     </div>
@@ -53,6 +56,7 @@
           ></span>
         </h1>
       </div>
+      <!--begin about section -->
       <div class="section about" id="about">
         <!-- <h1 class="header" id="start">Who am I?</h1> -->
         <div class="about-content">
@@ -61,16 +65,59 @@
             alt="picture of kira"
             class="my-image"
           />
-
           <p class="about-text">Some stuff about me and more stuff</p>
         </div>
       </div>
+      <!--end about section -->
+      <!--begin experience section -->
       <div class="section experience" id="experience"></div>
       <div class="section projects" id="projects">
         <p>my highlighted projects</p>
       </div>
-      <!--end site content -->
+      <!--end about section -->
+      <!--begin contact form -->
+      <form class="section form" id="contact" action="">
+        <div class="form-content">
+          <h1 class="form-title"> Get in touch</h1>
+          <div class="form-element">
+            <label class="label" for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name"/>
+            <br/>
+          </div>
+          <div class="form-element">
+            <label class="label" for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" />
+            <br/>
+          </div>
+          <div class="form-element date">
+            <label class="label" for="date">Date:</label>
+            <input class="input" type="date" id="date" name="date" />
+            <br />
+          </div>
+          <div class="form-element">
+            <label class="label" for="text">Message: </label>
+            <input class="input" type="message" id="message" name="message" />
+            <br/>
+          </div>
+          <div class="form-element buttons">
+            <input
+              class="btn btn-primary"
+              id="submit"
+              type="submit"
+              value="Submit"
+            />
+            <input
+              class="btn btn-secondary"
+              type="reset"
+              name="reset"
+              value="Reset"
+            />
+          </div>
+        </div>
+      </div>
+      <!--END contact form -->
     </div>
+    <!--END site content -->
     <!-- java script-->
     <script defer src="myPage.js"></script>
   </body>

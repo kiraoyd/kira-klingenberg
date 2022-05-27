@@ -135,7 +135,6 @@ body {
   border: 10px solid coral;
 }
 
-
 /*style the about section*/
 
 /* style my image */
@@ -153,8 +152,6 @@ body {
 .about-text {
   margin: 50px;
 }
-
-
 
 /* style the experience section */
 .experience {
@@ -184,13 +181,9 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: stretch;
-   /* swtich to grid!!!! */
+  /* swtich to grid!!!! */
 }
 
-.degree{
+.degree {
   /* border: 5px solid black; */
-
-  
 }
-
-.

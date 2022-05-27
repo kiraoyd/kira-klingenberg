@@ -128,6 +128,7 @@ body {
 
 /*general style for each content section container*/
 .section {
+  /* padding-top: 100px; */
   height: auto;
   min-height: 500px;
   width: auto;
@@ -145,7 +146,7 @@ body {
   margin: 0px 10px 0px 0px;
 }
 .about-content {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
 }
 
@@ -157,7 +158,6 @@ body {
 .experience {
   display: flex;
   flex-flow: row wrap;
-  border: 10px solid coral;
 }
 
 .myWork {
@@ -186,4 +186,103 @@ body {
 
 .degree {
   /* border: 5px solid black; */
+}
+
+/* style the form */
+
+.form-content {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.form-title {
+  text-align: left;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.form-element {
+  margin: 20px 10px 20px 10px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border: 2px solid slategray; */
+  /* border: 5px solid black; */
+}
+
+.form .email {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.form .name {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.form .message {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.form .buttons {
+  grid-column: span 1;
+}
+
+/*style the input labels */
+.label {
+  font-weight: bold;
+  /* border: 2px solid slategray; */
+  float: left;
+}
+
+/* style the input containers */
+.input {
+  /* border: 2px solid slategray; */
+  width: 100%;
+}
+
+#message {
+  height: 100%;
+}
+
+/*style submit button */
+.btn-primary {
+  float: left;
+  color: var(--white);
+  border-width: 1px;
+  border-color: var(--green);
+  border-radius: 3px;
+}
+
+/*style submit button when hovered */
+.btn-primary:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border-style: solid;
+  border-color: var(--black);
+  border-width: 1px;
+}
+
+/*style reset button */
+.btn-secondary {
+  float: left;
+  margin-left: 20px;
+  background-color: var(--white);
+  color: var(--blue);
+  border: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+/*style reset button when hovered*/
+.btn-secondary:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border-style: solid;
+  border-color: var(--black);
+  border-width: 1px;
 }

@@ -135,6 +135,7 @@ body {
   border: 10px solid coral;
 }
 
+
 /*style the about section*/
 
 /* style my image */
@@ -152,3 +153,44 @@ body {
 .about-text {
   margin: 50px;
 }
+
+
+
+/* style the experience section */
+.experience {
+  display: flex;
+  flex-flow: row wrap;
+  border: 10px solid coral;
+}
+
+.myWork {
+  width: 50%;
+  /* border: 10px solid coral; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  /* swtich to grid!!!! */
+}
+
+.job {
+  /* border: 5px solid black; */
+}
+
+.myEdu {
+  width: 50%;
+  /* border: 10px solid slategray; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+   /* swtich to grid!!!! */
+}
+
+.degree{
+  /* border: 5px solid black; */
+
+  
+}
+
+.

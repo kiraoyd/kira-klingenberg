@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="myPage.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- <script defer src="myPage.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--begin navbar -->
@@ -25,15 +28,15 @@
       <a class="initials nav-jump" href="#home">Hi I'm Kira!</a>
       <ul class="nav-list">
         <li class="list-item">
-          <a class="nav-jump" href="#about"> Who again? </a>
+          <a class="nav-jump aboutLink" href="#about"> Who again? </a>
         </li>
         <li class="list-item">
-          <a class="nav-jump" href="#experience">My Work</a>
+          <a class="nav-jump workLink" href="#experience">My Work</a>
         </li>
         <li class="list-item">
-          <a class="nav-jump" href="#projects"> Projects</a>
+          <a class="nav-jump projectsLink" href="#projects"> Projects</a>
         </li>
-        <li class="list-item">
+        <li class="list-item contactLink">
           <a class="nav-jump" href="#contact"> Contact</a>
         </li>
       </ul>
@@ -47,32 +50,39 @@
           class="welcome-gif"
           allowfullscreen
         ></iframe>
-        <h1 class="animated-text">
-          Writing code is
-          <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[ "creative.", "challenging.", "important.", "fun!" ]'
-          ></span>
-        </h1>
+          <h1 class="animated-text">
+            Writing code is
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "creative.", "challenging.", "important.", "fun!" ]'
+            ></span>
+          </h1>
       </div>
       <!--begin about section -->
       <div class="section about" id="about">
-        <!-- <h1 class="header" id="start">Who am I?</h1> -->
+        <!-- <h1 class="header" id="start">Nice to meet you!</h1> -->
         <div class="about-content">
           <img
             src="../images/kira.jpg"
             alt="picture of kira"
             class="my-image"
           />
-          <p class="about-text">Some stuff about me and more stuff</p>
+          <div class="about-text">
+            <h2 class="about-header"> Hello!</h2>
+            <p>My name is Kira and I’m a computer science graduate student at Portland State University (PSU). 
+            </p>
+            <p>After getting my BA in Buisness Admin/HR I worked in retail at Trader Joes for many years, helped found a science education non-profit, and produced/hosted a science podcast. In 2018 I made a pivot and started studying computer science.
+            <p>  I absolutely love this field! Solving problems by writing programs is so much fun!  I’m super interested in databases, data processing, and data management. There is more data at our fingertips right now than ever. If we can find creative, compelling, and meaningful ways to use it I think we can make this world better for everyone.  </p>
+            <p>I'm also currently working as a Graduate Assistant for the foundational computer science class, CS161, here at PSU. I help build curriculum, deliver content, and most importantly encourage new students to discover that computer science is absolutely something they can do. </p>
         </div>
+      </div>
       </div>
       <!--END about section -->
       <!--begin experience section -->
       <div class="section experience" id="experience"></div>
       <div class="section projects" id="projects">
-        <p>my highlighted projects</p>
+        <p>[space saved for projects section]</p>
       </div>
       <!--END about section -->
       <!--begin contact form -->

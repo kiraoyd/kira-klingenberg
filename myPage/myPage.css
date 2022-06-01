@@ -1,5 +1,7 @@
 body {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: "Padauk", sans-serif;
+  color: white;
   font-size: 1.2em;
   display: block;
   /* box-sizing: border-box; */
@@ -8,7 +10,45 @@ body {
 .content {
   padding-top: 100px;
   text-align: center;
-  background-color: seashell;
+  /* background-color: seashell; */
+  background-color: #2d2d2d;
+}
+
+/* general style for headers */
+.header {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.work {
+  color: var(--lemon);
+}
+
+.education {
+  color: coral;
+}
+
+.job {
+  color: var(--lemon);
+}
+
+.degree {
+  color: coral;
+}
+
+/*general style for each content section container*/
+
+.section {
+  /* padding-top: 100px; */
+  height: auto;
+  min-height: 500px;
+  width: auto;
+  margin: 10px;
+  /* border-radius: 25px; */
 }
 
 /* -------NAVBAR--------*/
@@ -27,7 +67,7 @@ body {
   top: 0;
   overflow: hidden;
   width: 100%;
-  border-bottom: 5px solid black;
+  /* border-bottom: 5px solid black; */
   background-color: white;
 }
 
@@ -71,11 +111,26 @@ body {
 
 /* style individual link when hovered */
 .nav-jump:hover {
-  color: coral;
   text-align: center;
   text-decoration: none;
   font-size: 0.7em;
   padding: 15px;
+}
+
+.aboutLink:hover {
+  color: coral;
+}
+
+.workLink:hover {
+  color: var(--slate);
+}
+
+.projectsLink:hover {
+  color: var(--lemon);
+}
+
+.contactLink:hover {
+  color: var(--stone);
 }
 
 /* -------CONTENT--------*/
@@ -101,42 +156,37 @@ body {
 
 /*style the home animation*/
 .home {
-  display: flex;
-  flex-flow: row-reverse;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
   padding-right: 0px;
+  /* border: solid 10px black; */
 }
 
 .welcome-gif {
   width: 700px;
-  /* height: 280px; */
+  height: 200px;
   padding-left: 20px;
   float: right;
+  grid-column: span 2;
 }
 
 .animated-text {
-  padding-bottom: 50px;
-  padding-top: 150px;
-}
-
-/* general style for headers */
-.header {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 50px;
+  /* position: absolute; */
+  grid-column: span 2;
+  /* padding-bottom: 20px; */
   padding-top: 50px;
 }
 
-/*general style for each content section container*/
-.section {
-  /* padding-top: 100px; */
-  height: auto;
-  min-height: 500px;
-  width: auto;
-  margin: 10px;
-  border: 10px solid coral;
-}
-
 /*style the about section*/
+
+.about {
+  /* border: 10px solid coral; */
+  margin-top: 50px;
+  color: var(--gray4);
+}
 
 /* style my image */
 .my-image {
@@ -144,30 +194,38 @@ body {
   height: 660px;
   float: left;
   margin: 0px 10px 0px 0px;
+  border-radius: 15px;
 }
 .about-content {
   /* border: 1px solid black; */
   display: flex;
 }
 
+.about-header {
+  color: var(--slate);
+  text-align: center;
+}
+
 .about-text {
   margin: 50px;
+  text-align: left;
 }
 
 /* style the experience section */
+
 .experience {
-  display: flex;
-  flex-flow: row wrap;
+  margin-top: 50px;
+  display: grid;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr; */
+  border: 10px solid var(--slate);
 }
 
 .myWork {
-  width: 50%;
-  /* border: 10px solid coral; */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  /* swtich to grid!!!! */
+  /* width: 50%; */
+  border-right: 10px solid coral;
+  display: grid;
+  grid-gap: 50px;
 }
 
 .job {
@@ -175,20 +233,27 @@ body {
 }
 
 .myEdu {
-  width: 50%;
+  /* width: 50%; */
+  display: grid;
+  grid-gap: 50px;
   /* border: 10px solid slategray; */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  /* swtich to grid!!!! */
+  grid-column: span1;
 }
 
 .degree {
   /* border: 5px solid black; */
 }
 
+/* style the projects section */
+
+.projects {
+  /* border: 10px solid var(--lemon); */
+}
 /* style the form */
+
+.form {
+  /* border: 10px solid var(--stone); */
+}
 
 .form-content {
   padding: 40px;
@@ -241,8 +306,11 @@ body {
 
 /* style the input containers */
 .input {
-  /* border: 2px solid slategray; */
+  border: 0.5px solid var(--stone);
   width: 100%;
+  border-radius: 5px;
+  background-color: #999999;
+  text-align: start;
 }
 
 #message {
@@ -254,14 +322,15 @@ body {
   float: left;
   color: var(--white);
   border-width: 1px;
-  border-color: var(--green);
+  border-color: var(--white);
   border-radius: 3px;
+  background-color: var(--gray2);
 }
 
 /*style submit button when hovered */
 .btn-primary:hover {
-  background-color: var(--orange);
-  color: var(--black);
+  background-color: var(--slate);
+  color: var(--white);
   border-style: solid;
   border-color: var(--black);
   border-width: 1px;
@@ -271,17 +340,18 @@ body {
 .btn-secondary {
   float: left;
   margin-left: 20px;
-  background-color: var(--white);
-  color: var(--blue);
+  background-color: var(--gray2);
+  color: var(--white);
   border: solid;
+  border-color: var(--black);
   border-width: 1px;
   border-radius: 3px;
 }
 
 /*style reset button when hovered*/
 .btn-secondary:hover {
-  background-color: var(--orange);
-  color: var(--black);
+  background-color: var(--slate);
+  color: var(--white);
   border-style: solid;
   border-color: var(--black);
   border-width: 1px;

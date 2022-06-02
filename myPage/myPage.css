@@ -62,6 +62,7 @@ body {
 /*general navbar styles*/
 .navbar {
   display: flex;
+  color: black;
   justify-content: flex-start;
   position: fixed;
   top: 0;
@@ -106,8 +107,8 @@ body {
 }
 
 /* style the link containers when hovered */
-.list-item:hover {
-}
+/* .list-item:hover {
+} */
 
 /* style individual link when hovered */
 .nav-jump:hover {
@@ -218,7 +219,7 @@ body {
   display: grid;
   /* grid-template-columns: 1fr;
   grid-template-rows: 1fr; */
-  border: 10px solid var(--slate);
+  /* border: 10px solid var(--slate); */
 }
 
 .myWork {

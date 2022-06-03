@@ -48,33 +48,30 @@ body {
 }
 
 /* -------NAVBAR--------*/
-
+/* 
 .initials {
   font-weight: bold;
   font-size: 1.5em;
   float: left;
-}
+} */
 
 /*general navbar styles*/
 .navbar {
-  display: flex;
-  color: black;
-  justify-content: flex-start;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
-  overflow: hidden;
+  right: 0;
+  left: 0;
   width: 100%;
-  /* border-bottom: 5px solid black; */
   background-color: white;
 }
 
 /*style the list of links */
-.nav-list {
+/* .nav-list {
   padding-left: 200px;
   top: 0;
   list-style-type: none;
   overflow: hidden;
-}
+} */
 
 /* style the navbar gif*/
 .gif {
@@ -84,17 +81,17 @@ body {
 }
 
 /*style the link containers */
-.list-item {
+/* .nav-item {
   text-align: center;
   text-decoration: none;
   width: 150px;
   height: 60px;
   padding-top: 15px;
   float: left;
-}
+} */
 
 /*style the individual links themselves */
-.nav-jump {
+.nav-link {
   color: var(--black);
   text-align: center;
   text-decoration: none;
@@ -107,7 +104,7 @@ body {
   } */
 
 /* style individual link when hovered */
-.nav-jump:hover {
+.nav-link:hover {
   text-align: center;
   text-decoration: none;
   font-size: 0.7em;

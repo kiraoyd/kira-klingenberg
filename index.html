@@ -19,28 +19,28 @@
   </head>
   <body>
     <!--begin navbar -->
-    <div class="navbar">
-      <iframe
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+      <a class="navbar-brand gif" href="#home">   
+        <iframe
         src="https://giphy.com/embed/Qc0BxWM9TxljvJug2x"
         class="gif"
         allowfullscreen
-      ></iframe>
-      <a class="initials nav-jump" href="#home">Hi I'm Kira!</a>
-      <ul class="nav-list">
-        <li class="list-item">
-          <a class="nav-jump aboutLink" href="#about"> Who again? </a>
-        </li>
-        <li class="list-item">
-          <a class="nav-jump workLink" href="#experience">My Work</a>
-        </li>
-        <li class="list-item">
-          <a class="nav-jump projectsLink" href="#projects"> Projects</a>
-        </li>
-        <li class="list-item contactLink">
-          <a class="nav-jump" href="#contact"> Contact</a>
-        </li>
-      </ul>
+      ></iframe></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link home" aria-curent="page" href="#">Home</a>
+          <a class="nav-link aboutLink" href="#about"> Who again? </a>
+          <a class="nav-link workLink" href="#experience">My Work</a>
+          <a class="nav-link projectsLink" href="#projects"> Projects</a>
+          <a class="nav-link" href="#contact"> Contact</a>
+        </div>
+      </div>
     </div>
+  </nav>
     <!--END navbar -->
     <div class="content col" id="home">
       <!--begin site content -->

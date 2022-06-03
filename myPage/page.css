@@ -348,7 +348,9 @@ body {
   /* tablet about */
 
   .name {
-    font-size: 3em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    overflow: hidden;
   }
 
   .about-content {

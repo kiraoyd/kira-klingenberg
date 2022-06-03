@@ -143,6 +143,7 @@ edu.forEach((learn) => {
 //ALL the following JS code grabbed from codepen example:
 //https://speckyboy.com/css-javascript-text-animation-snippets/
 //will need to  cite
+//look into animation libraries
 
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;

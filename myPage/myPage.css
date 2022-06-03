@@ -159,9 +159,7 @@ body {
 /*style the home animation*/
 .home {
   display: grid;
-  
   grid-template-columns: 1fr; 
-  
   /* justify-content: center; */
   border: solid 10px white;
 }

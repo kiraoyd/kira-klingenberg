@@ -2,6 +2,8 @@ body {
   font-family: "Padauk", sans-serif;
   color: white;
   font-size: 1.2em;
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
 
 .content {
@@ -13,7 +15,7 @@ body {
 
 .name-container {
   width: 100%;
-  padding: 20px;
+  padding: 40px;
   justify-content: center;
 }
 
@@ -151,6 +153,7 @@ body {
 }
 
 .about-content {
+  display: grid;
   padding: 10px 0px 10px 20px;
 }
 .my-image {
@@ -270,21 +273,27 @@ body {
 /* media queries */
 
 /* mobile first */
-@media (max-width: 550px) {
+@media (max-width: 320px) {
   /* mobile about */
 
-  .name {
-    font-size: 2em;
+  .body {
     width: 100%;
   }
 
-  .about-content {
-    display: grid;
-    /* border: 1px solid black; */
+  .name {
+    font-size: 100%;
+    width: 100%;
+    overflow: hidden;
+    letter-spacing: 10px;
   }
 
   .img-container {
     width: 100%;
+  }
+
+  .about-text {
+    margin: 15px;
+    text-align: center;
   }
 
   /* mobile experience */
@@ -293,12 +302,24 @@ body {
     /* border: 10px solid var(--slate); */
   }
 
+  .aboutText {
+    padding: 0px 10px 0px 10px;
+  }
+
   .myWork {
     display: grid;
     width: 100%;
     grid-row-gap: 50px;
     /* border: 10px solid var(--white); */
     border-bottom: 10px solid coral;
+  }
+
+  .job {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .degree {
+    padding: 0px 10px 0px 10px;
   }
 
   .myEdu {
@@ -319,7 +340,7 @@ body {
 }
 
 /* tablet */
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 768px) {
   /* tablet home */
   .welcome-gif {
     background-color: white;
@@ -328,9 +349,12 @@ body {
   /* tablet about */
 
   .about-content {
-    display: flex;
+    display: grid;
     align-items: center;
-    /* border: 1px solid black; */
+    border: 1px solid black;
+  }
+
+  .about-text {
   }
 
   /* tablet experience */
@@ -367,7 +391,7 @@ body {
 }
 
 /* desktop */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /* desktop home */
 
   .welcome-gif {

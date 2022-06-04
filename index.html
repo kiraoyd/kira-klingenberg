@@ -70,7 +70,7 @@
           </div>
       </div>
       <!--begin about section -->
-      <div class="section about col" id="about">
+      <section class="section about col" id="about">
         <!-- <h1 class="header" id="start">Nice to meet you!</h1> -->
         <div class="about-content">
           <div class="img-container">
@@ -89,14 +89,36 @@
             <p>I'm also currently working as a Graduate Assistant for the foundational computer science class, CS161, here at PSU. I help build curriculum, deliver content, and most importantly encourage new students to discover that computer science is absolutely something they can do. </p>
         </div>
       </div>
-      </div>
+    </section>
       <!--END about section -->
       <!--begin experience section -->
-      <div class="section experience" id="experience"></div>
-      <div class="section projects" id="projects">
+      <section class="section experience" id="experience"></section>
+      <!--END experience section-->
+      <!--begin projects section, slideshow-->
+      <section class="section projects" id="projects">
         <p>[space saved for projects section]</p>
-      </div>
-      <!--END about section -->
+        <!--one slide template-->
+        <div class="slideshow">
+          <div class="slide">
+            <img src="" alt="image for this slide">
+            <div class="slideText">Caption Text</div>
+          </div>
+        
+        <!--end slide template-->
+        <!--begin slideshow buttons-->
+        <a class="previous" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+        <!--end slideshow buttons-->
+        
+<!-- The dots/circles ADJUST TO MY LIKING STILL -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+      </section>
+     <!--END projects section-->
       <!--begin contact form -->
       <form class="section form" id="contact" action="">
         <div class="form-content">

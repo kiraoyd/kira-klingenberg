@@ -19,6 +19,27 @@ body {
   justify-content: center;
 }
 
+.color-change {
+  color: coral;
+  font-weight: bold;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: coral;
+  }
+  20% {
+  }
+  40% {
+  }
+  60% {
+  }
+  80% {
+  }
+  100% {
+  }
+}
 .name {
   letter-spacing: 20px;
   padding-bottom: 40px;
@@ -278,6 +299,9 @@ body {
   .body {
     width: 100%;
   }
+  .section {
+    overflow: hidden;
+  }
 
   .name {
     font-size: 100%;
@@ -365,7 +389,7 @@ body {
   /* tablet experience */
   .experience {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     /* border: 10px solid var(--slate); */
     padding: 10px;
   }
@@ -375,7 +399,7 @@ body {
     width: 100%;
     grid-row-gap: 50px;
     /* border: 10px solid var(--white); */
-    border-right: 10px solid coral;
+    border-bottom: 10px solid coral;
   }
 
   .myEdu {

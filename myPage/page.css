@@ -20,14 +20,14 @@ body {
 }
 
 .color-change {
-  color: coral;
+  color: var(--lemon);
   font-weight: bold;
   -webkit-animation: colorchange 20s infinite alternate;
 }
 
 @-webkit-keyframes colorchange {
   0% {
-    color: coral;
+    color: var(--lemon);
   }
   20% {
   }
@@ -48,6 +48,12 @@ body {
   width: 100%;
   font-size: 100%;
   overflow: hidden;
+  font-weight: 800;
+}
+
+.tagline {
+  color: coral;
+  font-size: 2.5em;
 }
 
 /* general style for headers */
@@ -159,8 +165,13 @@ body {
   /* border: solid 10px coral; */
 }
 
+.animation-container {
+  background-color: coral;
+  padding: 20px 0px 10px 0px;
+}
+
 .animated-text {
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* border: solid 10px coral; */
   width: 100%;
 }
@@ -169,7 +180,7 @@ body {
 
 .about {
   /* border: 10px solid coral; */
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .about-content {
@@ -380,7 +391,7 @@ body {
   .about-content {
     display: grid;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   .about-text {
@@ -425,7 +436,7 @@ body {
 
   .welcome-gif {
     background-color: white;
-    float: right;
+    /* float: right; */
   }
 
   .name {

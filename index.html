@@ -94,31 +94,38 @@
       <!--begin experience section -->
       <section class="section experience" id="experience"></section>
       <!--END experience section-->
+
+      
       <!--begin projects section, slideshow-->
       <section class="section projects" id="projects">
-        <p>[space saved for projects section]</p>
-        <!--one slide template-->
+        <h2 class="projects-header">My Projects</h2>
         <div class="slideshow">
+          <!--one slide template-->
           <div class="slide">
-            <img src="" alt="image for this slide">
-            <div class="slideText">Caption Text</div>
+            <a class="image-link" href="https://github.com/kiraoyd/CS300-CATS-Project.git" target="_blank"> <img src="images/chocoAn.png" alt="image for this slide" class="slide-image">  </a>
+            <p class="slide-text">Chocoholics Anonymous Terminal System</p>
           </div>
-        
-        <!--end slide template-->
-        <!--begin slideshow buttons-->
-        <a class="previous" onclick="plusSlides(-1)"><</a>
-        <a class="next" onclick="plusSlides(1)">></a>
-        <!--end slideshow buttons-->
-        
-<!-- The dots/circles ADJUST TO MY LIKING STILL -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-</div>
+          <div class="slide">
+            <!-- <a class="image-link" href="https://github.com/kiraoyd/gkit-animations.git"><img src="images/orbits.gif" alt="image for this slide" class="slide-image"></a> -->
+            <a class="image-link" href="https://replit.com/@kirak/SolarOrbits#SolarOrbits.py" target="_blank"><img src="images/orbits.gif" alt="image for this slide" class="slide-image"></a>
+            <p class="slide-text">Solar Orbits Animation</p>
+          </div>
+          <!--end slide template-->
+          <!--begin slideshow buttons-->
+          <div class="slide-buttons">
+            <a class="next" onclick="plusSlides(1)">Previous</a>
+            <a class="previous" onclick="plusSlides(-1)">Next</a>
+          </div>
+          <!--end slideshow buttons-->
+          <!-- The dots/circles ADJUST TO MY LIKING STILL -->
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
       </section>
      <!--END projects section-->
+
       <!--begin contact form -->
       <form class="section form" id="contact" action="">
         <div class="form-content">

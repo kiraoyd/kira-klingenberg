@@ -226,24 +226,58 @@ body {
 /* projects slideshow */
 .slideshow {
   width: 100%;
-  position: relative;
+  /* position: relative; */
   margin: auto;
+  /* border: 10px white solid; */
+}
+
+.projects-header {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.slide-buttons {
+  /* border: 5px black solid; */
 }
 
 /* hide images by default*/
-.slides {
+.slide {
   display: none;
+  /* border: 10px green solid; */
 }
+
+.slide-image {
+  width: 70%;
+  padding: 20px 20px 0px 20px;
+  border-radius: 10px;
+}
+
+.slide-text {
+  /* border: 10px coral solid; */
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: var(--slate);
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+/* * {
+  border: 1px solid red;
+} */
 
 /* next and prev buttons */
 .previous,
 .next {
   cursor: pointer;
-  position: absolute;
+  /* position: absolute; */
+  /* float: left; */
   top: 50%;
-  width: auto;
+  width: 100%;
   margin-top: -22px;
   padding: 16px;
+  margin: 20px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -254,7 +288,8 @@ body {
 
 .previous:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--slate);
+  color: var(--black);
 }
 
 /* nextd button specific to right */
@@ -263,17 +298,10 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-/*caption text styles*/
-.slideText {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.dots {
   text-align: center;
+  padding: 20px;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

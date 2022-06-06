@@ -161,8 +161,8 @@ body {
 }
 
 .my-image {
-  width: 280px;
-  height: 660px;
+  width: 294px;
+  height: 699px;
   border-radius: 15px;
 }
 
@@ -613,6 +613,10 @@ body {
   .about-content {
     display: flex;
     align-items: center;
+  }
+
+  .my-image {
+    margin-left: 50px;
   }
 
   /* dekstop - experience section */

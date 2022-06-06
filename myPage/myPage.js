@@ -43,18 +43,18 @@ const exp = [
 const edu = [
   {
     school: "Portland State University",
-    earned: "MS",
+    earned: "MS - Computer Science",
     date: "2018 - Present",
   },
   {
     school: "Portland Community College",
-    earned: "",
-    date: "2013-2015",
+    earned: "Biology/Chemistry",
+    date: "2013 - 2015",
   },
   {
     school: "Portland State University",
-    earned: "BA",
-    date: "2008",
+    earned: "BA - Buisness Admin/HR",
+    date: "2003 - 2008",
   },
 ];
 

@@ -1,29 +1,41 @@
 //Get resume data
 const exp = [
   {
+    title: "Instructor (GTA)",
+    org: "Portland State University",
+    course: "CS161 - Intro to Program & Problem Solving",
+    department: "Maseeh College of Engineering and Computer Science",
+    date: "Summer Term 2022",
+  },
+  {
     title: "Graduate Teaching Assistant (GTA)",
     org: "Portland State University",
-    department: "",
+    course: "CS161 - Intro to Program & Problem Solving",
+    department: "Maseeh College of Engineering and Computer Science",
     date: "2022 - present",
   },
   {
     title: "Technical Course Support Specialist (TCSS)",
     org: "Portland State University",
-    department: "CS161",
+    course: "CS161 - Intro to Program & Problem Solving",
+    department: "Maseeh College of Engineering and Computer Science",
     date: "2019 - 2022",
   },
 
   {
     title: "Technical Course Support Specialist (TCSS)",
     org: "Portland State University",
-    department: "CS162, CS163, CS302",
+    course:
+      "CS162 - Intro to Computer Science, CS163 - Data Structures , CS202 - Object Oriented Programming",
+    department: "Maseeh College of Engineering and Computer Science",
     date: "2019 - 2022",
   },
 
   {
     title: "President & Project Director",
     org: "Science Project",
-    department: "Educational Non-profit",
+    course: "",
+    department: "Education Non-profit Organization",
     date: "2013 - 2018",
   },
 ];
@@ -48,26 +60,51 @@ const edu = [
 
 let experience = document.querySelector("#experience");
 
+//create work container
 const myWork = document.createElement("div");
 myWork.classList.add("myWork");
+//create container for header icon and text
+const headerContainer = document.createElement("div");
+headerContainer.classList.add("header-container");
+//create img for icon
+const square = document.createElement("img");
+square.classList.add("work-icon");
+square.src = "images/square.svg";
+headerContainer.appendChild(square);
+//create the title text
 let workTitle = document.createElement("h2");
 workTitle.classList.add("header");
 workTitle.classList.add("work");
 let workTitleText = document.createTextNode("My Work Experience");
 workTitle.appendChild(workTitleText);
-myWork.appendChild(workTitle);
+headerContainer.appendChild(workTitle);
+//append the header container to the work section
+myWork.append(headerContainer);
 experience.appendChild(myWork);
 
+//create education container
 const myEdu = document.createElement("div");
 myEdu.classList.add("myEdu");
+//create container for header icom and text
+const eduHeader = document.createElement("div");
+eduHeader.classList.add("header-container");
+//create img for icon
+const triangle = document.createElement("img");
+triangle.classList.add("edu-icon");
+triangle.src = "images/triangle.svg";
+eduHeader.appendChild(triangle);
+//create the title text
 let eduTitle = document.createElement("h2");
 eduTitle.classList.add("header");
 eduTitle.classList.add("education");
 let eduTitleText = document.createTextNode("My Education");
 eduTitle.appendChild(eduTitleText);
-myEdu.appendChild(eduTitle);
+eduHeader.appendChild(eduTitle);
+//append the header container to the work section
+myEdu.appendChild(eduHeader);
 experience.appendChild(myEdu);
 
+//append job information to the work section
 exp.forEach((work) => {
   console.log(work.title); //test
   //make the job container
@@ -80,6 +117,7 @@ exp.forEach((work) => {
   if (work.title) {
     let header = document.createElement("h5");
     let name = document.createTextNode(work.title);
+    header.classList.add("job-name");
     header.appendChild(name);
     job.appendChild(header);
   }
@@ -90,6 +128,14 @@ exp.forEach((work) => {
     let orgText = document.createTextNode(work.org);
     org.appendChild(orgText);
     job.appendChild(org);
+  }
+
+  //Course
+  if (work.course) {
+    let myClass = document.createElement("p");
+    let classText = document.createTextNode(work.course);
+    myClass.appendChild(classText);
+    job.appendChild(myClass);
   }
 
   //department
@@ -109,6 +155,7 @@ exp.forEach((work) => {
   }
 });
 
+//append education information for the edu section
 edu.forEach((learn) => {
   console.log(learn.school); //test
   let degree = document.createElement("div");

@@ -125,6 +125,7 @@ body {
   font-size: 100%;
   overflow: hidden;
   font-weight: 800;
+  color: white;
 }
 
 .tagline {
@@ -183,7 +184,7 @@ body {
   text-align: center;
   width: 100%;
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 30px;
   text-transform: uppercase;
   font-size: 2em;
 }
@@ -193,11 +194,38 @@ body {
   color: var(--lemon);
 }
 
+.header-container {
+  display: flex;
+  height: 20%;
+  align-items: flex-start;
+}
+
+.work-icon {
+  width: 20%;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
 .education {
   color: var(--coral);
+  height: 50%;
+}
+
+.edu-icon {
+  width: 18%;
+  padding-left: 10px;
+  margin-left: 30px;
+  padding-bottom: 50px;
 }
 
 .job {
+  color: var(--gray4);
+}
+
+.job-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
   color: var(--lemon);
 }
 
@@ -207,10 +235,26 @@ body {
 
 /* ----------PROJECTS SECTION: SLIDESHOW--------------- */
 
+.projects {
+  padding-top: 0px;
+}
+
+.project-header-container {
+  /* border: solid 10px white; */
+  padding-right: 40px;
+}
+
 .projects-header {
   font-size: 2em;
   text-transform: uppercase;
   color: var(--slate);
+  /* border: white 10px solid; */
+}
+
+.projects-icon {
+  width: 10%;
+  margin-left: 30px;
+  padding: 30px 0px;
 }
 
 .slideshow {
@@ -376,7 +420,7 @@ body {
 /* *******-------MEDIA QUERIES--------***** */
 
 /* -------MOBILE--------- */
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   /* mobile - about section */
   .body {
     width: 100%;
@@ -438,6 +482,27 @@ body {
   }
 
   /* mobile - projects section */
+  .project-header-container {
+    display: flex;
+    align-content: flex-start;
+    height: 70%;
+    padding-top: 50px;
+  }
+
+  .projects-header {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--slate);
+    padding-top: 20px;
+  }
+
+  .projects-icon {
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+    padding: 0px;
+  }
+
   .projects {
     width: 100%;
     border-top: 10px solid var(--slate);
@@ -451,7 +516,7 @@ body {
 }
 
 /*----------TABLET---------------*/
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   /* tablet - home section */
   .welcome-gif {
     background-color: white;
@@ -495,6 +560,27 @@ body {
   }
 
   /* tablet - projects section*/
+  .project-header-container {
+    display: flex;
+    align-content: flex-start;
+    height: 70%;
+    padding-top: 50px;
+  }
+
+  .projects-header {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--slate);
+    padding-top: 20px;
+  }
+
+  .projects-icon {
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+    padding: 0px;
+  }
+
   .projects {
     width: 100%;
     border-top: 10px solid var(--slate);
@@ -538,7 +624,7 @@ body {
     display: grid;
     width: 100%;
     grid-row-gap: 50px;
-    border-right: 10px solid coral;
+    border-right: 10px solid var(--slate);
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -549,6 +635,7 @@ body {
   }
 
   /* desktop - projects section */
+
   .projects {
     width: 100%;
   }

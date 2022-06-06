@@ -12,14 +12,14 @@ const exp = [
     org: "Portland State University",
     course: "CS161 - Intro to Program & Problem Solving",
     department: "Maseeh College of Engineering and Computer Science",
-    date: "2022 - present",
+    date: "Mar 2022 - present   ·  4 mos",
   },
   {
     title: "Technical Course Support Specialist (TCSS)",
     org: "Portland State University",
     course: "CS161 - Intro to Program & Problem Solving",
     department: "Maseeh College of Engineering and Computer Science",
-    date: "2019 - 2022",
+    date: "Jan 2019 - Mar 2022 · 3 yrs 3 mos",
   },
 
   {
@@ -28,7 +28,15 @@ const exp = [
     course:
       "CS162 - Intro to Computer Science, CS163 - Data Structures , CS202 - Object Oriented Programming",
     department: "Maseeh College of Engineering and Computer Science",
-    date: "2019 - 2022",
+    date: "Sep 2021 - Mar 2022 ·  7 mos",
+  },
+
+  {
+    title: "Education Mentor",
+    org: "Portland State University",
+    course: "Invention Bootcamp",
+    department: "Maseeh College of Engineering and Computer Science",
+    date: "Jun 2021 - Aug 2021 ·     3 mos",
   },
 
   {
@@ -36,7 +44,15 @@ const exp = [
     org: "Science Project",
     course: "",
     department: "Education Non-profit Organization",
-    date: "2013 - 2018",
+    date: "2013 - 2018 · 5 yrs",
+  },
+
+  {
+    title: "Mate/Crewmember",
+    org: "Trader Joes",
+    course: "",
+    department: "Mate: Apr 2014 - Mar 2017 ·   3 yrs",
+    date: "Crewmember: Sep 2005 - Jul 2021 ·   15yrs 11mos",
   },
 ];
 

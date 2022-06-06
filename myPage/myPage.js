@@ -70,6 +70,7 @@ headerContainer.classList.add("header-container");
 const square = document.createElement("img");
 square.classList.add("work-icon");
 square.src = "images/square.svg";
+square.alt = "square icon";
 headerContainer.appendChild(square);
 //create the title text
 let workTitle = document.createElement("h2");
@@ -92,6 +93,7 @@ eduHeader.classList.add("header-container");
 const triangle = document.createElement("img");
 triangle.classList.add("edu-icon");
 triangle.src = "images/triangle.svg";
+triangle.alt = "traingle icon";
 eduHeader.appendChild(triangle);
 //create the title text
 let eduTitle = document.createElement("h2");
@@ -115,7 +117,7 @@ exp.forEach((work) => {
   //make the job content
   //Header
   if (work.title) {
-    let header = document.createElement("h5");
+    let header = document.createElement("h4");
     let name = document.createTextNode(work.title);
     header.classList.add("job-name");
     header.appendChild(name);
@@ -164,7 +166,7 @@ edu.forEach((learn) => {
 
   //header
   if (learn.school) {
-    let header = document.createElement("h5");
+    let header = document.createElement("h4");
     let name = document.createTextNode(learn.school);
     header.appendChild(name);
     degree.appendChild(header);

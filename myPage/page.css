@@ -14,7 +14,7 @@ body {
 .content {
   padding-top: 75px;
   text-align: center;
-  background-color: #2d2d2d;
+  background-color: var(--darkGray);
   width: 100%;
 }
 
@@ -107,10 +107,10 @@ body {
     color: var(--coral);
   }
   60% {
-    color: var(--gray2);
+    color: var(--gray4);
   }
   80% {
-    color: var(--teal);
+    color: var(--seafoam);
   }
   100% {
     color: var(--blue);
@@ -149,7 +149,8 @@ body {
 
 .animated-text {
   font-weight: bold;
-  color: var(--white);
+  /* color: var(--white); */
+  color: var(--darkGray);
   width: 100%;
 }
 

@@ -1,9 +1,14 @@
+/* * {
+  border: 1px solid red;
+} */
+
+/* ------- GENERAL STYLES --------*/
+
 body {
   font-family: "Padauk", sans-serif;
   color: white;
   font-size: 1.2em;
   width: 100%;
-  /* overflow: hidden; */
 }
 
 .content {
@@ -13,61 +18,6 @@ body {
   width: 100%;
 }
 
-.name-container {
-  width: 100%;
-  padding: 40px;
-  justify-content: center;
-}
-
-.color-change {
-  color: var(--lemon);
-  font-weight: bold;
-  -webkit-animation: colorchange 20s infinite alternate;
-}
-
-@-webkit-keyframes colorchange {
-  0% {
-    color: var(--lemon);
-  }
-  20% {
-  }
-  40% {
-  }
-  60% {
-  }
-  80% {
-  }
-  100% {
-  }
-}
-.name {
-  letter-spacing: 20px;
-  padding-bottom: 40px;
-  text-transform: uppercase;
-  /* font-size: 3em; */
-  width: 100%;
-  font-size: 100%;
-  overflow: hidden;
-  font-weight: 800;
-}
-
-.tagline {
-  color: coral;
-  font-size: 2.5em;
-}
-
-/* general style for headers */
-.header {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
-/*general style for each content section container*/
-
 .section {
   display: grid;
   width: auto;
@@ -75,12 +25,6 @@ body {
 }
 
 /* -------NAVBAR--------*/
-/* 
-.initials {
-  font-weight: bold;
-  font-size: 1.5em;
-  float: left;
-} */
 
 /*general navbar styles*/
 .navbar {
@@ -92,30 +36,11 @@ body {
   background-color: white;
 }
 
-/*style the list of links */
-/* .nav-list {
-  padding-left: 200px;
-  top: 0;
-  list-style-type: none;
-  overflow: hidden;
-} */
-
-/* style the navbar gif*/
-.gif {
-  width: 100px;
-  height: 60px;
+/* style the navbar icon*/
+.icon {
   float: left;
+  width: 15px;
 }
-
-/*style the link containers */
-/* .nav-item {
-  text-align: center;
-  text-decoration: none;
-  width: 150px;
-  height: 60px;
-  padding-top: 15px;
-  float: left;
-} */
 
 /*style the individual links themselves */
 .nav-link {
@@ -126,16 +51,15 @@ body {
   padding: 15px;
 }
 
-/* style the link containers when hovered */
-/* .list-item:hover {
-  } */
-
 /* style individual link when hovered */
 .nav-link:hover {
   text-align: center;
   text-decoration: none;
-  font-size: 0.7em;
   padding: 15px;
+}
+
+.home {
+  color: var(--black);
 }
 
 .aboutLink:hover {
@@ -154,15 +78,67 @@ body {
   color: var(--stone);
 }
 
-/* home section */
-.home {
-  /* border: solid 10px blue; */
+/* -------HOME SECTION--------------- */
+
+.name-container {
+  width: 100%;
+  padding: 40px;
+  justify-content: center;
+}
+
+/* style the color changing tag icons around name */
+.color-change {
+  color: var(--lemon);
+  font-weight: bold;
+  animation-name: colorchange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    color: var(--lemon);
+  }
+  20% {
+    color: var(--slate);
+  }
+  40% {
+    color: var(--coral);
+  }
+  60% {
+    color: var(--gray2);
+  }
+  80% {
+    color: var(--teal);
+  }
+  100% {
+    color: var(--blue);
+  }
+}
+
+.name {
+  letter-spacing: 20px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 100%;
+  overflow: hidden;
+  font-weight: 800;
+}
+
+.tagline {
+  color: coral;
+  font-size: 2.5em;
 }
 
 .welcome-gif {
-  height: 200px;
+  height: 250px;
   width: 100%;
-  /* border: solid 10px coral; */
+}
+
+.gif-home {
+  background-color: white;
 }
 
 .animation-container {
@@ -171,32 +147,27 @@ body {
 }
 
 .animated-text {
-  /* padding-top: 50px; */
-  /* border: solid 10px coral; */
+  font-weight: bold;
+  color: var(--white);
   width: 100%;
 }
 
-/* about section */
-
-.about {
-  /* border: 10px solid coral; */
-  /* margin-top: 50px; */
-}
+/* ---------ABOUT SECTION------------- */
 
 .about-content {
   display: grid;
-  padding: 10px 0px 10px 20px;
 }
+
 .my-image {
   width: 280px;
   height: 660px;
-  /* border: solid 10px yellow; */
   border-radius: 15px;
 }
 
 .about-header {
   color: var(--slate);
   text-align: center;
+  font-size: 2em;
 }
 
 .about-text {
@@ -205,14 +176,25 @@ body {
   color: var(--gray4);
 }
 
-/* experience section */
+/* -----------EXPERIENCE SECTION--------- */
 
+/* style headers for work/edu parts */
+.header {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+/* set colors for text */
 .work {
   color: var(--lemon);
 }
 
 .education {
-  color: coral;
+  color: var(--coral);
 }
 
 .job {
@@ -220,16 +202,10 @@ body {
 }
 
 .degree {
-  color: coral;
+  color: var(--coral);
 }
 
-/* projects slideshow */
-.slideshow {
-  width: 100%;
-  /* position: relative; */
-  margin: auto;
-  /* border: 10px white solid; */
-}
+/* ----------PROJECTS SECTION: SLIDESHOW--------------- */
 
 .projects-header {
   font-size: 2em;
@@ -237,14 +213,14 @@ body {
   color: var(--slate);
 }
 
-.slide-buttons {
-  /* border: 5px black solid; */
+.slideshow {
+  width: 100%;
+  margin: auto;
 }
 
-/* hide images by default*/
+/* hide images by default */
 .slide {
   display: none;
-  /* border: 10px green solid; */
 }
 
 .slide-image {
@@ -254,7 +230,6 @@ body {
 }
 
 .slide-text {
-  /* border: 10px coral solid; */
   text-transform: uppercase;
   font-size: 1.5em;
   color: var(--slate);
@@ -263,16 +238,10 @@ body {
   padding: 30px;
 }
 
-/* * {
-  border: 1px solid red;
-} */
-
-/* next and prev buttons */
+/* style buttons */
 .previous,
 .next {
   cursor: pointer;
-  /* position: absolute; */
-  /* float: left; */
   top: 50%;
   width: 100%;
   margin-top: -22px;
@@ -292,17 +261,17 @@ body {
   color: var(--black);
 }
 
-/* nextd button specific to right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+/* style dots icons */
 .dots {
   text-align: center;
   padding: 20px;
 }
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -319,7 +288,6 @@ body {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -334,7 +302,7 @@ body {
   }
 }
 
-/* form */
+/* ----------FORM--------------*/
 
 .form-content {
   padding: 40px;
@@ -350,16 +318,13 @@ body {
   box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* border: 2px solid slategray; */
 }
 
-/*style the input labels */
 .label {
   font-weight: bold;
   float: left;
 }
 
-/* style the input containers */
 .input {
   border: 0.5px solid var(--stone);
   width: 100%;
@@ -372,7 +337,6 @@ body {
   height: 200px;
 }
 
-/*style submit button */
 .btn-primary {
   float: left;
   color: var(--white);
@@ -382,7 +346,6 @@ body {
   background-color: var(--gray2);
 }
 
-/*style submit button when hovered */
 .btn-primary:hover {
   background-color: var(--slate);
   color: var(--white);
@@ -391,7 +354,6 @@ body {
   border-width: 1px;
 }
 
-/*style reset button */
 .btn-secondary {
   float: left;
   margin-left: 20px;
@@ -403,7 +365,6 @@ body {
   border-radius: 3px;
 }
 
-/*style reset button when hovered*/
 .btn-secondary:hover {
   background-color: var(--slate);
   color: var(--white);
@@ -412,39 +373,40 @@ body {
   border-width: 1px;
 }
 
-/* media queries */
+/* *******-------MEDIA QUERIES--------***** */
 
-/* mobile first */
+/* -------MOBILE--------- */
 @media (max-width: 320px) {
-  /* mobile about */
-
+  /* mobile - about section */
   .body {
     width: 100%;
   }
   .section {
     overflow: hidden;
   }
-
   .name {
     font-size: 100%;
     width: 100%;
     overflow: hidden;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
+  }
+
+  .tagline {
+    font-size: 95%;
   }
 
   .img-container {
     width: 100%;
   }
-
   .about-text {
     margin: 15px;
     text-align: center;
+    font-size: 1.1em;
   }
 
-  /* mobile experience */
+  /* mobile - experience section */
   .experience {
     width: 100%;
-    /* border: 10px solid var(--slate); */
   }
 
   .aboutText {
@@ -455,7 +417,8 @@ body {
     display: grid;
     width: 100%;
     grid-row-gap: 50px;
-    /* border: 10px solid var(--white); */
+    padding-bottom: 30px;
+    border-top: 10px solid var(--lemon);
     border-bottom: 10px solid coral;
   }
 
@@ -470,49 +433,49 @@ body {
   .myEdu {
     display: grid;
     grid-row-gap: 50px;
-    /* border: 10px solid var(--white); */
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-  /* mobile projects */
+  /* mobile - projects section */
   .projects {
     width: 100%;
+    border-top: 10px solid var(--slate);
   }
 
-  /* mobile form */
+  /* mobile - form */
   .form-content {
     width: 100%;
+    border-top: 10px solid var(--gray2);
   }
 }
 
-/* tablet */
+/*----------TABLET---------------*/
 @media (min-width: 321px) and (max-width: 768px) {
-  /* tablet home */
+  /* tablet - home section */
   .welcome-gif {
     background-color: white;
   }
 
-  /* tablet about */
-
+  /* tablet - about section */
   .name {
     font-size: 1.5em;
     letter-spacing: 5px;
     overflow: hidden;
   }
 
+  .tagline {
+    font-size: 95%;
+  }
+
   .about-content {
     display: grid;
     align-items: center;
-    /* border: 1px solid black; */
   }
 
-  .about-text {
-  }
-
-  /* tablet experience */
+  /* tablet - experience section*/
   .experience {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    /* border: 10px solid var(--slate); */
     padding: 10px;
   }
 
@@ -520,71 +483,72 @@ body {
     display: grid;
     width: 100%;
     grid-row-gap: 50px;
-    /* border: 10px solid var(--white); */
     border-bottom: 10px solid coral;
+    padding-bottom: 50px;
+    padding-top: 100px;
   }
 
   .myEdu {
     display: grid;
     grid-row-gap: 50px;
-    /* border: 10px solid var(--white); */
+    padding-top: 50px;
   }
 
-  /* tablet projects */
+  /* tablet - projects section*/
   .projects {
     width: 100%;
+    border-top: 10px solid var(--slate);
+    padding-bottom: 50px;
   }
 
-  /* tablet form */
+  /* tablet - form section */
   .form-content {
     width: 100%;
   }
 }
 
-/* desktop */
+/* -------------DESKTOP---------------*/
 @media (min-width: 769px) {
-  /* desktop home */
-
+  /* desktop - home section */
   .welcome-gif {
     background-color: white;
-    /* float: right; */
+  }
+
+  .gif-home {
+    padding-left: 70px;
   }
 
   .name {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
-  /* desktop about */
+  /* desktop - about section */
   .about-content {
     display: flex;
     align-items: center;
-    /* border: 1px solid black; */
   }
 
-  /* dekstop experience */
+  /* dekstop - experience section */
   .experience {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 10px solid var(--slate); */
   }
 
   .myWork {
     display: grid;
     width: 100%;
     grid-row-gap: 50px;
-    /* border: 10px solid var(--white); */
     border-right: 10px solid coral;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .myEdu {
     display: grid;
-    /* grid-column: span2; */
     grid-row-gap: 50px;
-    /* border: 10px solid var(--white); */
   }
 
-  /* tablet projects */
-
+  /* desktop - projects section */
   .projects {
     width: 100%;
   }
@@ -592,9 +556,9 @@ body {
   .form {
     justify-items: center;
   }
-  /* tablet form */
+
+  /* desktop - form */
   .form-content {
     width: 750px;
-    /* border: 10px solid var(--white); */
   }
 }

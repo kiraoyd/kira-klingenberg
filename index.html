@@ -21,12 +21,13 @@
     <!--begin navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-      <a class="navbar-brand gif" href="#home">   
-        <iframe
-        src="https://giphy.com/embed/Qc0BxWM9TxljvJug2x"
-        class="gif"
-        allowfullscreen
-      ></iframe></a>
+      <a class="navbar-brand" href="#home">  
+        <div class="home-icons"> 
+        <img class="icon" src="images/triangle.svg"/>
+        <img class="icon" src="images/circle.svg"/>
+        <img class="icon" src="images/square.svg"/>
+        </div>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,7 +52,7 @@
       <h2 class="tagline"> I tell computers what to do.</h2>
       </div>
       <div class="home col">
-        <div class="col">
+        <div class="gif-home">
         <iframe
           src="images/shapes.gif"
           class="welcome-gif"
@@ -79,7 +80,7 @@
             alt="picture of kira"
             class="my-image"
           />
-        </div>
+          </div>
           <div class="about-text">
             <h2 class="about-header"> Hello!</h2>
             <p>My name is Kira and I’m a computer science graduate student at Portland State University (PSU). 
@@ -147,7 +148,7 @@
           </div>
           <div class="form-element message">
             <label class="label" for="text"> Let's Talk! </label><br/>
-            <input class="input" type="message" id="message" name="message" />
+            <textarea class="input" type="message" id="message" name="message" ></textarea>
             <br/>
           </div>
           <div class="form-element buttons">

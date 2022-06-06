@@ -74,6 +74,8 @@ const edu = [
   },
 ];
 
+//---------APPEND TO THE DOM---------------
+
 let experience = document.querySelector("#experience");
 
 //create work container
@@ -207,8 +209,6 @@ edu.forEach((learn) => {
 
 //ALL the following JS code grabbed from codepen example:
 //https://speckyboy.com/css-javascript-text-animation-snippets/
-//will need to  cite
-//look into animation libraries
 
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
@@ -266,7 +266,8 @@ window.onload = function () {
 
 //---------------------------------
 
-// JAVASCRIPT FROM TUTORIAL FOR SLIDESHOW
+// JAVASCRIPT SNIPPET GRABBET FROM TUTORIAL FOR SLIDESHOW
+//https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -300,3 +301,5 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+//---------------------------------

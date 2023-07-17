@@ -272,7 +272,7 @@ body {
 
 .slide-text {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2.0 em;
   color: var(--slate);
   text-align: center;
   width: 100%;
@@ -281,7 +281,7 @@ body {
 
 .slide-sub-text {
   text-transform: uppercase;
-  font-size: 0.5em;
+  font-size: 1.0em;
   color: var(--slate);
   text-align: center;
   width: 100%;

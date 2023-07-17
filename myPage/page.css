@@ -261,10 +261,13 @@ body {
   display: none;
 }
 
-.slide-image {
+.slide-image, .slide-video {
   width: 50%;
   padding: 20px 20px 0px 20px;
   border-radius: 10px;
+}
+
+
 }
 
 .slide-text {

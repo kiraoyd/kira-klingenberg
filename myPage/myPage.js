@@ -1,6 +1,13 @@
 //Get resume data
 const exp = [
   {
+    title: "Graduate Teaching Assistant (GTA)",
+    org: "Portland State University",
+    course: "CS299 - Algorithmic Thinking for Data Science",
+    department: "Maseeh College of Engineering and Computer Science",
+    date: "Winter Term 2023",
+  },
+  {
     title: "Instructor (GTA)",
     org: "Portland State University",
     course: "CS161 - Intro to Program & Problem Solving",
@@ -60,7 +67,7 @@ const edu = [
   {
     school: "Portland State University",
     earned: "MS - Computer Science",
-    date: "2018 - Present",
+    date: "2018 - December 2023",
   },
   {
     school: "Portland Community College",

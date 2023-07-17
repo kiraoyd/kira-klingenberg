@@ -1,12 +1,23 @@
-# kira-klingenberg
+# kira-klingenberg: a personal website
 
 A static 'about me' website built for CS510 at Portland State University.
 
-This project is intended to showcase the HTML, CSS and JAVASCRIPT skills Kira built over the course of the 10-week Spring 2022 term in CS510: Intro to Web Development.
+
+
+This project is intended to showcase the HTML, CSS and JAVASCRIPT skills I built over the course of the 10-week Spring 2022 term in CS510: Intro to Web Development.
+
+I am restarting development on this site as of July 2023. There are a number of known issues that still need fixing:
+
+1. The contact form does not send emails on submit
+2. Some accessibility issues remain
+3. Some Responsive Web Design issues remain
+4. HTML and CSS design choices need to be gone over and refactored
+5. Javascript code is very basic and I'd like to boost this part up
 
 This site is deployed via Github Pages, and can be seen live at:
 https://kiraoyd.github.io/kira-klingenberg/
 
+## Citations
 Javascript code snippets cited in the myPage.js file include:
 
 TEXT ANIMATION SNIPPET:

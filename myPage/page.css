@@ -276,6 +276,15 @@ body {
   padding: 30px;
 }
 
+.slide-sub-text {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  color: var(--slate);
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
 /* style buttons */
 .previous,
 .next {

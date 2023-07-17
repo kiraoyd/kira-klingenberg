@@ -1,6 +1,6 @@
 # kira-klingenberg
 
-Kira Klingenberg's personal portfolio website built for CS510 at Portland State University.
+A static 'about me' website built for CS510 at Portland State University.
 
 This project is intended to showcase the HTML, CSS and JAVASCRIPT skills Kira built over the course of the 10-week Spring 2022 term in CS510: Intro to Web Development.
 
